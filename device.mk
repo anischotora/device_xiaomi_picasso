@@ -20,6 +20,10 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_BOARD_PLATFORM := lito
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 

@@ -43,6 +43,10 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_BOARD_PLATFORM := lito
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Shim
+PRODUCT_PACKAGES += \
+    libwatermark_shim
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

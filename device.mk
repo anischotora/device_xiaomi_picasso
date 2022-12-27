@@ -57,6 +57,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
+# Inherit from MindTheGApps
+ifeq ($(WITH_GAPPS), true)
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+TARGET_UNOFFICIAL_BUILD_ID += Gapps
+else
+TARGET_UNOFFICIAL_BUILD_ID += Vanilla
+endif
+
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/common.mk)
 

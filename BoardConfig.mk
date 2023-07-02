@@ -18,6 +18,10 @@ BUILD_BROKEN_DUP_RULES := true
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_picasso
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_picasso
+
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/picasso_user_defconfig
 

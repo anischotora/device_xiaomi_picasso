@@ -29,3 +29,6 @@ vendor.qcom.bluetooth.soc=cherokee
 
 # Display
 vendor.display.defer_fps_frame_count=2
+
+# SOC
+ro.soc.model=SM7250

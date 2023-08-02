@@ -23,5 +23,9 @@ audio.sys.offload.pstimeout.secs=3
 audio.sys.routing.latency=0
 ro.af.client_heap_size_kbyte=7168
 
+# Bluetooth
+persist.vendor.qcom.bluetooth.soc=cherokee
+vendor.qcom.bluetooth.soc=cherokee
+
 # Display
 vendor.display.defer_fps_frame_count=2

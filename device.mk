@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 # Inherit from sm8250-common
-$(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
+$(call inherit-product, device/xiaomi/sm8250-common/common.mk)
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/picasso/picasso-vendor.mk)

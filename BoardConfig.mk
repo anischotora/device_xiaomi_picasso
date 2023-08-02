@@ -27,6 +27,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
 TARGET_KERNEL_CONFIG := vendor/picasso_user_defconfig
 
 # Props
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from the proprietary version

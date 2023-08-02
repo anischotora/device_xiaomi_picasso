@@ -30,8 +30,5 @@ vendor.qcom.bluetooth.soc=cherokee
 # Display
 vendor.display.defer_fps_frame_count=2
 
-# Netflix
-ro.netflix.bsp_rev=Q7250-19133-1
-
 # SOC
 ro.soc.model=SM7250

@@ -30,5 +30,10 @@ vendor.qcom.bluetooth.soc=cherokee
 # Display
 vendor.display.defer_fps_frame_count=2
 
+# Radio
+ro.telephony.default_cdma_sub=0
+ro.vendor.radio.5g=3
+telephony.lteOnCdmaDevice=1
+
 # SOC
 ro.soc.model=SM7250

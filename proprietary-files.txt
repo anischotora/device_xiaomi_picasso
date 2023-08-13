@@ -473,6 +473,10 @@ vendor/etc/init/init.batterysecret.rc
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
 
+# Charger (Mi Turbo Charge)
+vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
+
 # CNE - from LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0
 -vendor/app/CneApp/CneApp.apk|2839a8643422182451935867c83454dc7503c22b
 vendor/bin/cnd|f774d3a9e6ef476b9dc31fd9c9c00396f4fede7d

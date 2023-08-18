@@ -47,6 +47,10 @@ vendor/lib64/libaudcal.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libssrec.so
 
+# ADSP
+vendor/lib/libadsprpc.so
+vendor/lib64/libadsprpc.so
+
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so

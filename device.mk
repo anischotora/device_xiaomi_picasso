@@ -60,6 +60,8 @@ PRODUCT_COPY_FILES += \
 # Inherit from MindTheGApps
 ifeq ($(WITH_GAPPS), true)
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+# Inherit from ih8sn to bypass Safety Net check
+$(call inherit-product, ih8sn/product.mk)
 TARGET_UNOFFICIAL_BUILD_ID += Gapps
 else
 TARGET_UNOFFICIAL_BUILD_ID += Vanilla

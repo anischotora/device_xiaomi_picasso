@@ -8,13 +8,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Inherit from picasso device
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
-PRODUCT_NAME := lineage_picasso
+PRODUCT_NAME := derp_picasso
 PRODUCT_DEVICE := picasso
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

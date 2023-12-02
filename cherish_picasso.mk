@@ -8,13 +8,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common DerpFest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common CherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Inherit from picasso device
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
-PRODUCT_NAME := derp_picasso
+PRODUCT_NAME := cherish_picasso
 PRODUCT_DEVICE := picasso
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
@@ -28,3 +28,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="picasso-user 12 RKQ1.200826.002 V13.0.5.0.SGICNXM release-keys"
 
 BUILD_FINGERPRINT := Redmi/picasso/picasso:12/RKQ1.200826.002/V13.0.5.0.SGICNXM:user/release-keys
+
+# Cherish
+CHERISH_MAINTAINER := alosrobot
+CHERISH_CHIPSET := SM7250
+CHERISH_BATTERY := 4500mAh
+CHERISH_DISPLAY := 1080x2400
+
+CHERISH_BUILD_TYPE := OFFICIAL
